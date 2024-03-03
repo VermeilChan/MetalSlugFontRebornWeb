@@ -33,7 +33,7 @@ def form():
             return redirect(url_for('result', output=image_url))
 
     except FileNotFoundError as error:
-        return render_template('index.html', error=f"{error}", error_type='FileNotFoundError')
+        return render_template('index.html', error=f"{error}", error_unsupported='FileNotFoundError')
 
     except Exception as error:
         return render_template('index.html', error=f"Error: {error}")
@@ -44,4 +44,4 @@ def result():
     return render_template('results.html', output=output)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)

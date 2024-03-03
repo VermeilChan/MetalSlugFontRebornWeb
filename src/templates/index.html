@@ -2,10 +2,10 @@
 <html lang="en-US">
 <head>
     <title>MetalSlugFontReborn - Home</title>
-    <link rel="stylesheet" href="/static/css/compressed/home.min.css"/>
+    <link rel="stylesheet" href="/static/css/uncompressed/home.css"/>
     <link rel="icon" href="/static/assets/icons/favicon.ico" type="image/x-icon">
     <link rel="manifest" href="/static/manifest.json" />
-    <script src="/static/js/main.min.js"defer></script>
+    <script src="/static/js/main.js"defer></script>
     {% block head %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
 <body>
     {% block body %}
     <div class="container">
-        <div class="icons-container">
+        <div class="icons">
             <a href="https://github.com/VermeilChan/MetalSlugFontRebornWeb" target="_blank" rel="noopener noreferrer">
                 <img src="/static/assets/icons/github.svg" title="GitHub repository" alt="GitHub repository" class="social-icon" width="48" height="48">
             </a>
@@ -58,7 +58,7 @@
             {% if error %}
                 <p class="error-message">
                     {{ error }}
-                    {% if error_type == 'FileNotFoundError' %}
+                    {% if error_unsupported == 'FileNotFoundError' %}
                         check the supported characters <a href='/supported'>here</a>.
                     {% endif %}
                 </p>

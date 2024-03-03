@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     function updateColorOptions() {
-        const fontValue = fontSelect.value;
+        const selectedFont = fontSelect.value;
         const colorMap = {
             '1': ['Blue', 'Orange-1', 'Orange-2'],
             '2': ['Blue', 'Orange-1', 'Orange-2'],
@@ -23,23 +23,19 @@ document.addEventListener("DOMContentLoaded", function () {
             '5': ['Orange-1']
         };
 
-        const colors = colorMap[fontValue] || [];
-        let colorOptions = '';
+        const availableColors = colorMap[selectedFont] || [];
+        let colorOptionsHTML = '';
 
-        colors.forEach(color => {
+        availableColors.forEach(color => {
             if (colorOptionsMap.hasOwnProperty(color)) {
-                colorOptions += `<option value="${color.toLowerCase()}">${colorOptionsMap[color]}</option>`;
+                colorOptionsHTML += `<option value="${color.toLowerCase()}">${colorOptionsMap[color]}</option>`;
             }
         });
 
-        colorSelect.innerHTML = colorOptions;
+        colorSelect.innerHTML = colorOptionsHTML;
     }
 
-    const isHomePage = window.location.pathname === '/';
-    const isResultPage = window.location.pathname === '/result';
-    const isReload = performance.getEntriesByType("navigation")[0]?.type === "reload";
-
-    if (isReload && !isHomePage && isResultPage) {
+    if (performance.getEntriesByType("navigation")[0]?.type === "reload" && window.location.pathname === '/result') {
         window.location.href = "/";
     }
 });

@@ -4,7 +4,7 @@ from PIL import Image
 from constants import special_characters
 
 def generate_filename():
-    unique_id = uuid4()
+    unique_id = uuid4().hex
     return f"{unique_id}.png"
 
 def get_font_paths(font, color):
