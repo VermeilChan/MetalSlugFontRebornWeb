@@ -4,7 +4,7 @@
   <a href="https://github.com/VermeilChan/MetalSlugFontRebornWeb/graphs/contributors">
     <img alt="Contributors" src="https://img.shields.io/github/contributors/VermeilChan/MetalSlugFontRebornWeb?color=green" />
   </a>
-  <a href="https://github.com/VermeilChan/MetalSlugFontRebornWeb/blob/main/LICENSE">
+  <a href="https://github.com/VermeilChan/MetalSlugFontRebornWeb/LICENSE">
     <img alt="License" src="https://img.shields.io/github/license/VermeilChan/MetalSlugFontRebornWeb?color=purple" />
   </a>
   <a href="https://github.com/VermeilChan/MetalSlugFontRebornWeb/issues">
@@ -13,7 +13,7 @@
   <a href="https://github.com/VermeilChan/MetalSlugFontRebornWeb/pulls">
     <img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/VermeilChan/MetalSlugFontRebornWeb?color=yellow" />
   </a>
-  <a href="https://github.com/VermeilChan/MetalSlugFontRebornWeb/commits/main">
+  <a href="https://github.com/VermeilChan/MetalSlugFontRebornWeb/commits">
     <img alt="Last Commit" src="https://img.shields.io/github/last-commit/VermeilChan/MetalSlugFontRebornWeb?color=darkcyan" />
   </a>
   <a href="https://github.com/VermeilChan/MetalSlugFontRebornWeb">
@@ -40,7 +40,7 @@ If you have a GitHub account and have found this repository helpful, please cons
 ## Features
 
 - Easily transform text into images using the Metal Slug font.
-- Supports uppercase and lowercase letters (A-Z, a-z), digits (0-9), symbols, and multiple colors.
+- Supports uppercase and lowercase letters (A-Z, a-z), digits (0-9), symbols (♥-★), and multiple colors.
 
 ## How to Contribute
 
@@ -67,3 +67,4 @@ I want to say a big thank you to the individuals who helped me.
 
 - [Flask](https://flask.palletsprojects.com/en/3.0.x/)
 - [Pillow](https://python-pillow.org)
+- [Ruff](https://docs.astral.sh/ruff/): Python linter and code formatter.
