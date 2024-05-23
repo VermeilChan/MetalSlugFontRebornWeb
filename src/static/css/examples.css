@@ -1,7 +1,12 @@
+@font-face {
+    font-family: 'Cascadia Code NF';
+    src: url('/static/assets/web-font/CascadiaCodeNF-Regular.ttf') format('truetype');
+}
+
 body {
     background-color: #1e1e1e;
     color: #fff;
-    font-family: 'Arial' ,sans-serif;
+    font-family: 'Cascadia Code NF', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -13,6 +18,7 @@ header {
 h1 {
     margin: 0;
     font-size: 36px;
+    color: #4caf50;
 }
 main {
     max-width: 800px;
