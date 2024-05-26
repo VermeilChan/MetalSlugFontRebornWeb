@@ -41,7 +41,7 @@ def get_character_image_path(character, font_paths):
     return character_image_path
 
 
-def get_or_create_character_image(character, font_paths):
+def get_character_image(character, font_paths):
     if character.isspace():
         return Image.new("RGBA", (30, 1), (0, 0, 0, 0))
 
@@ -55,7 +55,7 @@ def get_or_create_character_image(character, font_paths):
 
 
 def generate_image(text, image_filename, font_paths):
-    font_images = {c: get_or_create_character_image(c, font_paths) for c in set(text)}
+    font_images = {c: get_character_image(c, font_paths) for c in set(text)}
 
     total_width = sum(font_images[c].width for c in text)
     max_height = max(font_images[c].height for c in text)
