@@ -1,14 +1,11 @@
-@font-face {
-    font-family: 'Cascadia Code NF';
-    src: url('/static/assets/web-font/CascadiaCodeNF-Regular.ttf') format('truetype');
-}
 body {
     background-color: #222;
     color: #fff;
-    font-family: 'Cascadia Code NF', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
+
 .container {
     max-width: 800px;
     text-align: center;
@@ -18,17 +15,21 @@ body {
     background-color: #333;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 h1 {
     font-size: 36px;
     text-align: center;
     color: #4caf50;
 }
+
 p {
     font-size: 18px;
 }
+
 a {
     color: #fff;
 }
+
 button {
     background-color: #4caf50;
     color: #222;
@@ -39,31 +40,38 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
 button:hover {
     background-color: #45a049;
 }
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 20px auto;
 }
+
 @media (max-width: 600px) {
     .container {
         padding: 10px;
     }
 }
+
 body::-webkit-scrollbar {
     width: 12px;
 }
+
 body::-webkit-scrollbar-track {
     background: #1e1e1e;
 }
+
 body::-webkit-scrollbar-thumb {
     background-color: #333;
     border-radius: 6px;
     border: 3px solid #1e1e1e;
 }
+
 body::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
