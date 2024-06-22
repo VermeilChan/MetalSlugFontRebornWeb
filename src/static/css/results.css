@@ -52,6 +52,23 @@ img {
     margin: 20px auto;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 @media (max-width: 600px) {
     .container {
         padding: 10px;
