@@ -20,7 +20,7 @@ def examples():
 
 
 @app.route("/", methods=["POST"])
-def form():
+async def form():
     try:
         if request.method == "POST":
             text = request.form["text"]
@@ -32,7 +32,7 @@ def form():
             font_paths = get_font_paths(font, color)
 
             filename = generate_filename()
-            image_url, _ = generate_image(text, filename, font_paths)
+            image_url, _ = await generate_image(text, filename, font_paths)
 
             return redirect(url_for("result", output=image_url))
 
