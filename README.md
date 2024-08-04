@@ -65,6 +65,6 @@ I want to say a big thank you to the individuals who helped me.
 
 ### Third-party libraries
 
-- [Flask](https://flask.palletsprojects.com/en/3.0.x/)
-- [Pillow](https://python-pillow.org)
+- [Flask](https://flask.palletsprojects.com/en/3.0.x/): For web development
+- [Pillow](https://python-pillow.org): For image processing
 - [Ruff](https://docs.astral.sh/ruff/): Python linter and code formatter.
